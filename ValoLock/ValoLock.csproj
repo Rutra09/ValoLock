@@ -1,0 +1,137 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="Agents\Astra_icon.png" />
+      <None Remove="Agents\Breach_icon.png" />
+      <None Remove="Agents\Brimstone_icon.png" />
+      <None Remove="Agents\Chamber_icon.png" />
+      <None Remove="Agents\Clove_icon.png" />
+      <None Remove="Agents\Cypher_icon.png" />
+      <None Remove="Agents\Deadlock_icon.png" />
+      <None Remove="Agents\Fade_icon.png" />
+      <None Remove="Agents\Gekko_icon.png" />
+      <None Remove="Agents\Harbor_icon.png" />
+      <None Remove="Agents\Iso_icon.png" />
+      <None Remove="Agents\Jett_icon.png" />
+      <None Remove="Agents\KAYO_icon.png" />
+      <None Remove="Agents\Killjoy_icon.png" />
+      <None Remove="Agents\Neon_icon.png" />
+      <None Remove="Agents\Omen_icon.png" />
+      <None Remove="Agents\Phoenix_icon.png" />
+      <None Remove="Agents\Raze_icon.png" />
+      <None Remove="Agents\Reyna_icon.png" />
+      <None Remove="Agents\Sage_icon.png" />
+      <None Remove="Agents\Skye_icon.png" />
+      <None Remove="Agents\Sova_icon.png" />
+      <None Remove="Agents\Viper_icon.png" />
+      <None Remove="Agents\Yoru_icon.png" />
+      <None Remove="Fonts\Nunito-Bold.ttf" />
+      <None Remove="Fonts\Nunito.ttf" />
+      <None Remove="Fonts\Rubik-Light.ttf" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="Agents\Astra_icon.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Agents\Breach_icon.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Agents\Brimstone_icon.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Agents\Chamber_icon.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Agents\Clove_icon.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Agents\Cypher_icon.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Agents\Deadlock_icon.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Agents\Fade_icon.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Agents\Gekko_icon.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Agents\Harbor_icon.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Agents\Iso_icon.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Agents\Jett_icon.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Agents\KAYO_icon.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Agents\Killjoy_icon.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Agents\Neon_icon.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Agents\Omen_icon.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Agents\Phoenix_icon.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Agents\Raze_icon.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Agents\Reyna_icon.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Agents\Sage_icon.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Agents\Skye_icon.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Agents\Sova_icon.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Agents\Viper_icon.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Agents\Yoru_icon.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Fonts\Nunito-Bold.ttf">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Fonts\Nunito.ttf">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Fonts\Rubik-Light.ttf">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="appsettings.json" />
+      <Content Include="appsettings.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="imgs\valolock.png" />
+      <Content Include="imgs\valolock.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="imgs\lock.png" />
+      <Content Include="imgs\lock.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+</Project>

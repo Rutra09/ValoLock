@@ -1,0 +1,56 @@
+﻿<Window x:Class="ValoLock.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ValoLock"
+        mc:Ignorable="d"
+        Background="#141c27"
+        Title="" Height="450" Width="800"
+        Icon="/imgs/valolock.png"
+        ResizeMode="CanMinimize"
+        WindowStartupLocation="CenterScreen"
+        >
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="30" CornerRadius="0" GlassFrameThickness="0" NonClientFrameEdges="None"/>
+    </WindowChrome.WindowChrome>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <ScrollViewer  x:Name="AgentSelectorScrollViewer" Grid.Row="0" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" BorderThickness="0" >
+
+        <StackPanel x:Name="AgentSelectorStackPanel" Grid.Row="0" Orientation="Horizontal" Margin="10">
+            
+        </StackPanel>
+    </ScrollViewer>
+        <!-- Middle row with settings -->
+        <StackPanel Grid.Row="1">
+        </StackPanel>
+
+        <!-- Bottom row with start and stop buttons -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" x:Name="Buttons">
+            <Button Content="Start" Style="{StaticResource BottomButton}"   Background="Green" Padding="20,10" Foreground="White" Margin="5">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">   
+                        <Border Background="{TemplateBinding Background}" BorderThickness="1" CornerRadius="15" Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button Content="Stop"   Background="Red" Style="{StaticResource BottomButton}" Padding="20,10" Margin="5">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" BorderThickness="1" CornerRadius="15" Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
