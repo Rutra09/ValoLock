@@ -7,7 +7,7 @@
     <Application.Resources>
          <Style x:Key="BottomButton">
 			<Setter Property="TextElement.FontFamily" Value="/Fonts/#Nunito Bold"/>
-            <Setter Property="TextElement.FontSize" Value="25"/>
+            <Setter Property="TextElement.FontSize" Value="20"/>
             <Setter Property="TextElement.Foreground" Value="White"/>
         </Style>
     </Application.Resources>

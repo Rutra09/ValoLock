@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ValoLock"
+        xmlns:classes="clr-namespace:ValoLock.Classes"
         mc:Ignorable="d"
         Background="#141c27"
         Title="" Height="450" Width="800"
@@ -29,6 +30,12 @@
     </ScrollViewer>
         <!-- Middle row with settings -->
         <StackPanel Grid.Row="1">
+            <StackPanel Orientation="Horizontal" Margin="10" HorizontalAlignment="Center">
+                <classes:LeftRoundedButton x:Name="SpamClick" Click="SpamClick_OnClick" Background="#27374d" Padding="10" Margin="0,5" Content="SpamClick" FontFamily="/Fonts/#Nunito" FontSize="16" Foreground="White" Width="150">
+                   </classes:LeftRoundedButton>
+                <classes:RightRoundedButton x:Name="ImageRecognition" Click="ImageRecognition_OnClick" Background="#395171" Padding="10" Margin="0,5" Content="Image Recognition" FontFamily="/Fonts/#Nunito" FontSize="16" Foreground="White" Width="150">
+                    </classes:RightRoundedButton>
+                </StackPanel>
         </StackPanel>
 
         <!-- Bottom row with start and stop buttons -->

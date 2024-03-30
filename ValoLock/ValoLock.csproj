@@ -132,6 +132,22 @@
       <Content Include="imgs\lock.png">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
+      <None Remove="imgs\lockin.png" />
+      <Content Include="imgs\lockin.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="imgs\lockImage.png" />
+      <Content Include="imgs\lockImage.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Emgu.CV" Version="4.8.1.5350" />
+      <PackageReference Include="Emgu.CV.Bitmap" Version="4.8.1.5350" />
+      <PackageReference Include="Emgu.CV.runtime.windows" Version="4.8.1.5350" />
+      <PackageReference Include="Emgu.CV.UI" Version="4.8.1.5350" />
+      <PackageReference Include="ZedGraph" Version="5.1.7" />
     </ItemGroup>
 
 </Project>

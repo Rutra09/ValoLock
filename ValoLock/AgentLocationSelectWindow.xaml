@@ -14,7 +14,7 @@
         Topmost="True">
     <Border Background="#80000000" CornerRadius="5" BorderBrush="Transparent">
         <Grid>
-            <Image x:Name="ConfigurationAgentLocationImage" Source="/Agents/Astra_icon.png" HorizontalAlignment="Center" Height="150" Margin="0,5,0,0" VerticalAlignment="Top" Width="150"/>
+            <Image  x:Name="ConfigurationAgentLocationImage" Source="/Agents/Astra_icon.png" HorizontalAlignment="Center" Height="150" Margin="0,5,0,0" VerticalAlignment="Top" Width="150"/>
             <TextBlock x:Name="ConfigurationAgentLocationText" HorizontalAlignment="Center" Margin="0,0,0,5" Foreground="White" VerticalAlignment="Bottom" FontFamily="/Fonts/#Nunito" Text="Please select the location of the Astra Agent" FontSize="12"/>
         </Grid>
     </Border>

@@ -4,7 +4,13 @@ namespace ValoLock.Classes;
 
 public class Agents
 {
-    public static Dictionary<Int32 , Agent> AgentsList { get; set; } = new Dictionary<Int32, Agent>
+    public Agents(Dictionary<int, Agent> agentsList)
+    {
+        AgentsList = agentsList;
+    }
+
+    public Dictionary<Int32 , Agent> AgentsList { get; set; }
+        /*= new Dictionary<Int32, Agent>
     {
         {0, new Agent("Astra", "Astra_icon.png")},
         {1, new Agent("Breach", "Breach_icon.png")},
@@ -31,23 +37,24 @@ public class Agents
         {22, new Agent("Viper", "Viper_icon.png")},
         {23, new Agent("Yoru", "Yoru_icon.png")}
     };
-
+    */
     public Agent? SelectedAgent { get; set; } = null;
 
-    public Agent[] UnlockedAgents { get; set; } = Array.Empty<Agent>();
+    public String[] UnlockedAgents { get; set; } = Array.Empty<String>();
     
 
     public bool IsAgentUnlocked(String AgentName)
     { 
-        return UnlockedAgents.Any(e => e.Name == AgentName);
+        return UnlockedAgents.Any(e => e == AgentName);
     }
 
-    public void SaveUnlockedAgents()
+    public void SaveAgents()
     {
-        ((App)Application.Current).SaveUnlockedAgents();
+        ((App)Application.Current).SaveAgents();
     }
+    
 
-    public static Int32 GetAgentId(String agentName)
+    public Int32 GetAgentId(String agentName)
     {
         return AgentsList.FirstOrDefault(x => x.Value.Name == agentName).Key;
     }
